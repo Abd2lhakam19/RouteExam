@@ -1,0 +1,58 @@
+ Stack(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Color(0xffECFDF3).withOpacity(0.4),
+          ),
+          height: 168,
+
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 15.0, top: 15),
+          child: Row(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Positive vibes",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Boost your mood with \n positive vibes",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Image.asset("assets/images/play.png"),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "10 mins",
+                        style: TextStyle(fontWeight: FontWeight.w900),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            //  Spacer(),
+              Padding(
+                padding: const EdgeInsets.only(right: 38.0),
+                child: Image.asset("assets/images/feature.png",height: 50,width: 50,),
+              )
+            ],
+          ),
+        )
+      ],
+    ),
